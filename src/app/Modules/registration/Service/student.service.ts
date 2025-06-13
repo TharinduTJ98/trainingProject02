@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Student } from '../Modules/Student';
+import { Student } from '../Model/Student';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StudentService {
-    private studentsList: Student[] = [
+  private studentsList: Student[] = [
     {id: 1, name: 'ABC', email: 'abc@gmail.com', phone: '077-6284276'},
     {id: 2, name: 'DEF', email: 'def@gmail.com', phone: '077-4579852'},
     {id: 3, name: 'GHI', email: 'ghi@gmail.com', phone: '077-4793584'},

@@ -1,0 +1,34 @@
+<div class="container mt-4">
+  <h3 class="mb-4">Create New Student</h3>
+
+  <form>
+    <div class="mb-3">
+      <label for="studentName" class="form-label">Student Name</label>
+      <input type="text" class="form-control" id="studentName" placeholder="Enter student name">
+    </div>
+
+    <div class="mb-3">
+      <label for="studentEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="studentEmail" placeholder="Enter email">
+    </div>
+
+    <div class="mb-3">
+      <label for="studentPhone" class="form-label">Phone Number</label>
+      <input type="tel" class="form-control" id="studentPhone" placeholder="Enter phone number">
+    </div>
+
+    <div class="mb-3">
+      <label for="studentCourse" class="form-label">Course</label>
+      <select class="form-select" id="studentCourse">
+        <option selected disabled>Select course</option>
+        <option value="cs">Computer Science</option>
+        <option value="math">Mathematics</option>
+        <option value="eng">English</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        <a class="nav-link" routerLink="/dashboard/reg/view-all-students" routerLinkActive="active">Submit</a>
+    </button>
+  </form>
+</div>
